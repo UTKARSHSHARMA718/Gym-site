@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mike Tyson Boxing</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Philosopher', sans-serif;
+            color: gray;
+            margin: 0%;
+            padding: 0%;
+            background: url("images/1377112.jpg");
+
+        }
+
+        .left {
+            line-height: 0%;
+            /*isse text and images ka beech ma distance kum ho jaiga*/
+            position: absolute;
+            left: 30px;
+            top: 20px;
+            /* border: 2px solid purple; */
+            display: inline-block;
+
+        }
+
+        .left img {
+            width: 180px;
+        }
+
+        .left p {
+            color: silver;
+            text-align: center;
+            font-size: 22px;
+        }
+
+        .center {
+            width: 700px;
+            margin: 20px auto;
+            /*margin: top horizontal bottom*/
+            /* border: 2px solid rgb(73, 128, 0); */
+
+        }
+
+        .right {
+            display: inline-block;
+            position: absolute;
+            right: 30px;
+            top: 20px;
+            /* border: 1px solid rgb(226, 15, 103); */
+
+        }
+
+        .btn {
+            font-family: 'Philosopher', sans-serif;
+            color: hsl(0, 0%, 70%);
+            padding: 5px;
+            margin: 20px 10px;
+            background-color: rgb(15, 15, 15);
+            border: 2px solid rgb(0, 0, 0);
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            color: whitesmoke;
+        }
+
+        .navbar {
+
+            display: inline-block;
+            color: gray;
+        }
+
+        .navbar li {
+
+            margin: 5px;
+            padding: 10px;
+            display: inline-block;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        .navbar li a {
+            color: #C0C0C0;
+
+            text-decoration: none;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.Active {
+            text-decoration: overline;
+            color: whitesmoke;
+        }
+
+        .container {
+            border: 5px solid rgb(255, 255, 255);
+            height: 500px;
+            width: 650px;
+
+            border-radius: 7px;
+            display: block;
+            position: absolute;
+            top: 265px;
+            left: 175px;
+        }
+
+        .container button {
+            display: block;
+            width: 48%;
+            margin: auto;
+        }
+        .container button:hover {
+            background-color: crimson;
+        }
+
+        .form1 h1 {
+            text-align: center;
+            color: rgb(248, 250, 248);
+            text-decoration: underline;
+            /* text-decoration: overline; */
+            width: auto;
+            padding: 20px;
+            margin: 20px auto;
+        }
+
+        .inp {
+            font-family: 'Philosopher', sans-serif;
+            text-align: center;
+            display: block;
+            border: 2px solid black;
+            border-radius: 5px;
+            width: 300px;
+            height: 30px;
+            margin: 8px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="left">
+        <img src="images/5312644-mike-png-download-500500-free-transparent-tattoo-png-download-face-tattoo-png-900_500.png"
+            alt="">
+        <br>
+        <p>Mike Tyson</p>
+    </div>
+
+    <div class="center">
+        <div class="navbar">
+            <ul>
+                <li> <a href="#" class="Active">Home</a> </li>
+                <li> <a href="#">Training Routine</a> </li>
+                <li> <a href="#">Franchises</a> </li>
+                <li> <a href="#">Trouphies</a> </li>
+                <li> <a href="#">Contact us</a> </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="right">
+
+
+        <button class="btn">Call Us Now</button>
+        <button class="btn">Email Us</button>
+
+    </div>
+    <div class="container">
+        <form action="noaction.php" class="form1">
+            <h1>Join The Legendary Mike Tyson Boxing Club</h1>
+            <input type="text" placeholder="Enter Your Name" class="inp"><br>
+            <input type="text" placeholder="Enter Your Gender" class="inp"><br>
+            <input type="text" placeholder="Enter Your Age" class="inp"><br>
+            <input type="text" placeholder="Enter Your No." class="inp"><br>
+
+        </form>
+        <button class="btn">Submit</button>
+    </div>
+
+</body>
+
+</html>
